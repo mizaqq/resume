@@ -38,7 +38,7 @@ a{
 .photo{
   position:relative;
     float: right;
-    transform: translate(-10%, -7%);
+    transform: translate(10%, -7%);
     display: block;
   }
   
