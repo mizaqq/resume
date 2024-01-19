@@ -13,7 +13,6 @@
         body { font: 16px Helvetica, Sans-Serif; line-height: 24px; background: url(images/noise.jpg); }
         .clear { clear: both; }
         #page-wrap { width: 800px; margin: 40px auto 60px; }
-        #pic { float: right; margin: -30px 0 0 0; }
         h1 { margin: 0 0 16px 0; padding: 0 0 16px 0; font-size: 42px; font-weight: bold; letter-spacing: -2px; border-bottom: 1px solid #999; }
         h2 { font-size: 20px; margin: 0 0 6px 0; position: relative; }
         h2 span { position: absolute; bottom: 0; right: 0; font-style: italic; font-family: Georgia, Serif; font-size: 16px; color: #999; font-weight: normal; }
@@ -37,14 +36,58 @@
         #dynamicDt3 {
             height: 340px;
         }
-     </style>
+        #pic-container {
+            position: relative;
+            float: right;
+            overflow: hidden;
+            width: 50%; /* Adjust as needed */
+            max-width: 400px; /* Set a maximum width for the image */
+        }
+
+        #pic {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        #overlay {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 0; /* Initially hidden */
+            transition: opacity 0.3s ease-in-out; /* Smooth transition for opacity changes */
+        }
+
+        #pic-container:hover #overlay {
+            opacity: 1; /* Show overlay on hover */
+        }
+
+        #overlay-text {
+            font-size: 18px;
+            margin: 10px;
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
 
     <div id="page-wrap">
     
-        <img src="images/photo.jpeg" alt="Photo" id="pic" />
+        <div id="pic-container">
+            <img src="images/photo.jpeg" alt="Photo" id="pic" />
+            <div id="overlay">
+                <div id="overlay-text">Your overlay text goes here</div>
+            </div>
+        </div>
     
         <div id="contact-info" class="vcard">
                 
