@@ -6,7 +6,7 @@
 <head>
      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
-     <title>One Page Resume</title>
+     <title>Resume</title>
 
      <style type="text/css">
         * { margin: 0; padding: 0; }
@@ -23,9 +23,20 @@
         ul { margin: 0 0 32px 17px; }
         #objective { width: 500px; float: left; }
         #objective p { font-family: Georgia, Serif; font-style: italic; color: #666; }
-        dt { font-style: italic; font-weight: bold; font-size: 18px; text-align: right; padding: 0 26px 0 0; width: 150px; float: left; height: 100px; border-right: 1px solid #999;  }
+        dt { font-style: italic; font-weight: bold; font-size: 18px; text-align: right; padding: 0 26px 0 0; width: 150px; float: left; height:auto ; border-right: 1px solid #999;  }
         dd { width: 600px; float: right; }
-        dd.clear { float: none; margin: 0; height: 15px; }
+        dd.clear { float: none; margin: 0; height: 10px; }
+        #dynamicDt1 {
+            height: 150px;
+        }
+
+        #dynamicDt2 {
+            height: 190px;
+        }
+
+        #dynamicDt3 {
+            height: 340px;
+        }
      </style>
 </head>
 
@@ -33,26 +44,24 @@
 
     <div id="page-wrap">
     
-        <img src="images/cthulu.png" alt="Photo of Cthulu" id="pic" />
+        <img src="images/photo.jpeg" alt="Photo" id="pic" />
     
         <div id="contact-info" class="vcard">
-        
-            <!-- Microformats! -->
-        
-            <h1 class="fn">C'thulhu</h1>
+                
+            <h1 class="fn">Michał Zaręba</h1>
         
             <p>
-                Cell: <span class="tel">555-666-7777</span><br />
-                Email: <a class="email" href="mailto:greatoldone@lovecraft.com">greatoldone@lovecraft.com</a>
+                Cell: <span class="tel">533331212</span><br />
+                Email: <a class="email" href="mailto:zarberu@gmail.com">zarberu@gmail.com</a>
             </p>
         </div>
                 
         <div id="objective">
             <p>
-                I am an outgoing and energetic (ask anybody) young professional, seeking a 
-                career that fits my professional skills, personality, and murderous tendencies. 
-                My squid-like head is a masterful problem solver and inspires fear in who gaze upon it. 
-                I can bring world domination to your organization. 
+                Enthusiastic and communicative person with a passion for science, 
+                artificial intelligence, data sciences, and gaming. 
+                Experienced in programming within these domains, 
+                I am a highly motivated individual actively seeking opportunities to further develop my skills and contribute to innovative projects.
             </p>
         </div>
         
@@ -61,59 +70,70 @@
         <dl>
             <dd class="clear"></dd>
             
-            <dt>Education</dt>
+            <dt id = "dynamicDt1">Education</dt>
             <dd>
-                <h2>Withering Madness University - Planet Vhoorl</h2>
-                <p><strong>Major:</strong> Public Relations<br />
-                   <strong>Minor:</strong> Scale Tending</p>
+                <h2>Warsaw University of Life Sciences</h2>
+                <p><strong>Big Data Analytics</strong> (Master studies) <br />
+                2022 - On going</p>
+                <h2>Warsaw University of Life Sciences</h2>
+                <p><strong>IT and Econometrics</strong> (Bachelor studies) <br />
+                    2018 - 2022</p>
             </dd>
             
-            <dd class="clear"></dd>
-            
-            <dt>Skills</dt>
+            <dd class="clear"></dd>           
+            <dt id = "dynamicDt2">Experience</dt>
             <dd>
-                <h2>Office skills</h2>
-                <p>Office and records management, database administration, event organization, customer support, travel coordination</p>
-                
-                <h2>Computer skills</h2>
-                <p>Microsoft productivity software (Word, Excel, etc), Adobe Creative Suite, Windows</p>
-            </dd>
-            
-            <dd class="clear"></dd>
-            
-            <dt>Experience</dt>
-            <dd>
-                <h2>Doomsday Cult <span>Leader/Overlord - Baton Rogue, LA - 1926-2010</span></h2>
+                <h2>Programming teacher<span>Instakod, March 2022 - now</span></h2>
                 <ul>
-                    <li>Inspired and won highest peasant death competition among servants</li>
-                    <li>Helped coordinate managers to grow cult following</li>
-                    <li>Provided untimely deaths to all who opposed</li>
+                    <li>Providing classes for students from 10-18 years old for Python/C++/SQL</li>
+                    <li>Participation in the introduction of a new computer science curriculum for schools</li>
+                    <li>Being a leader for other programming teachers</li>
+                    <li>Preparation of curriculum for SQL and C++ language </li>
                 </ul>
-                
-                <h2>The Watering Hole <span>Bartender/Server - Milwaukee, WI - 2009</span></h2>
+                <h2>Customer service specialist<span>PZU - 2019-2022</span></h2>
                 <ul>
-                    <li>Worked on grass-roots promotional campaigns</li>
-                    <li>Reduced theft and property damage percentages</li>
-                    <li>Janitorial work, Laundry</li>
+                    <li>Customer service for property insurances</li>
                 </ul> 
             </dd>
             
             <dd class="clear"></dd>
+            <dt id = "dynamicDt3">Skills</dt>
+            <dd>
+                <h2>Technical Skills:</h2>
+                <ul>
+                  <li><strong>Programming Languages:</strong> Proficient in Python, C++. 
+                  Some languages used for the needs of a project(Kotlin,C#,).</li>
+                  <li><strong>Data Science:</strong> Econometric tools, Keras, NumPy, Pandas for effective analysis.</li>
+                  <li><strong>Database Management:</strong> SQL for data retrieval and management.</li>
+                  <li><strong>Excel/Google Worksheets:</strong> Skilled in data organization and analysis.</li>
+                  <li><strong>Machine Learning:</strong> Applied algorithms in practical projects.</li>
+                </ul>
+                <h2>Project Management:</h2>
+                <ul>
+                  <li><strong>Leadership:</strong> Led a team for a 60-person camp, collaborated on curriculum development.</li>
+                </ul>
+              
+                <h2>Soft Skills:</h2>
+                <ul>
+                  <li>Strong Analytical Thinking, Adaptability, Fast Learner.</li>
+                </ul>
+            </dd>
             
-            <dt>Hobbies</dt>
-            <dd>World Domination, Deep Sea Diving, Murder Most Foul</dd>
+
             
-            <dd class="clear"></dd>
-            
-            <dt>References</dt>
-            <dd>Available on request</dd>
-            
-            <dd class="clear"></dd>
         </dl>
         
         <div class="clear"></div>
     
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+        $(document).ready(function(){
+            $("dd").hide();
+            $("dt").click(function(){
+                $(this).next().slideToggle();
+            });
+        });
+    </script>
 
 </body>
 
