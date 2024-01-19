@@ -20,7 +20,7 @@
         a { color: #999; text-decoration: none; border-bottom: 1px dotted #999; }
         a:hover { border-bottom-style: solid; color: black; }
         ul { margin: 0 0 32px 17px; }
-        #objective { width: 500px; float: left; }
+        #objective { width: 50%; float: left; }
         #objective p { font-family: Georgia, Serif; font-style: italic; color: #666; }
         dt { font-style: italic; font-weight: bold; font-size: 18px; text-align: right; padding: 0 26px 0 0; width: 150px; float: left; height:auto ; border-right: 1px solid #999;  }
         dd { width: 600px; float: right; }
@@ -40,23 +40,21 @@
             color: #111
           }
         .photo{
-            position: relative;
+          position:relative;
             float: right;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            transform: translate(0%, 17%);
             display: block;
           }
           
           .photo img{
             width: 200px;
-            height: 280px;
+            height: 240px;
             object-fit: cover;
             filter: grayscale(100%) contrast(120%);
             box-shadow: 10px 15px 25px 0 rgba(0,0,0,.2);
             display: block;
             transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
-            margin-top: -10px;
+            margin-top: 10px;
           }
           
           .photo:hover img{
@@ -68,7 +66,7 @@
             width: 100%;
             height: 100%;
             top: 0;
-            margin-top: -10px;
+            margin-top: 100px;
           }
           .photo .glow{
             display: block;
@@ -91,48 +89,21 @@
           .photo:hover .glow-wrap{
             margin-top: 0;
           }
-          
-          h1{
-            position: absolute;
-            z-index: 1;
-            transform: translate(-25%, -65%);
-            font-family: 'Montserrat', sans-serif;
-            margin: 0;
-            line-height: 1.2;
-          }
-          
-          #author{
-            font-family: Helvetica, Arial;
-            text-transform: uppercase;
-            font-size: 14px;
-            text-decoration: none;
-            position: fixed;
-            bottom: 25px;
-            left: 50%;
-            transform: translateX(-50%);
-            color: #888;
-          }
-          
-          #author:hover{
-            color: #111;
-          }
     </style>
 </head>
 
 <body>
 
     <div id="page-wrap">
-        <a href="#" class="photo">
-        <h1>Michał Zaręba</h1>
-        <img src="images/photo.jpeg" />
-      <div class="glow-wrap">
-        <i class="glow"></i>
-      </div>
-    </a>
+                    <a href="#" class="photo">
+                        <img src="images/photo.jpeg" />
+                       <div class="glow-wrap">
+                      <i class="glow"></i>
+                    </div>
+                  </a> 
+                  <h1 class="fn">Michał Zaręba</h1>
+
         <div id="contact-info" class="vcard">
-                
-            <h1 class="fn">Michał Zaręba</h1>
-        
             <p>
                 Cell: <span class="tel">533331212</span><br />
                 Email: <a class="email" href="mailto:zarberu@gmail.com">zarberu@gmail.com</a>
@@ -209,14 +180,6 @@
         <div class="clear"></div>
     
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
-        $(document).ready(function(){
-            $("dd").hide();
-            $("dt").click(function(){
-                $(this).next().slideToggle();
-            });
-        });
-    </script>
 
 </body>
 
