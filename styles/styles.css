@@ -2,7 +2,8 @@
 * { margin: 0; padding: 0; }
 body { font: 18px Helvetica, Sans-Serif; line-height: 24px; 
 background-color: rgb(251, 207, 40);
-background-image: linear-gradient(#8b9da9, #fff6e4)
+background-image: linear-gradient(#8b9da9, #fff6e4);
+  height:100%;
 }
 .clear { clear: both; }
 #page-wrap { width: 80em; margin: 40px auto 60px; }
@@ -15,8 +16,8 @@ a:hover { border-bottom-style: solid; color: black; }
 ul { margin: 0 0 32px 17px; }
 #objective { width: 60%; float: left; }
 #objective p { font-family: Georgia, Serif; font-style: italic; color: #111; }
-dt { font-style: italic; font-weight: bold; font-size: 22px; text-align: center; padding: 0 26px 0 0; width: 13em; float: left; height:auto ; border-right: 1px solid #999;  }
-dd { width: 60em; float: right; }
+dt { font-style: italic; font-weight: bold; font-size: 22px; text-align: center; padding: 0 26px 0 0; width:20%; float: left; height:auto ; border-right: 1px solid #999;  }
+dd { width: 70%; float: right; }
 dd.clear { float: none; margin: 0; height: 10px; }
 #dynamicDt1 {
     height: 8em;
