@@ -41,14 +41,7 @@ a{
     transform: translate(-70%, -3%);
     display: block;
   }
-  @media only screen and (max-width: 600px) {
-     .photo{
-      position:relative;
-        float: right;
-        transform: translate(30%, -3%);
-        display: block;
-      }
-    }
+
   .photo img{
     width: 250px;
     height: 360px;
