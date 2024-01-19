@@ -45,7 +45,7 @@ a{
      .photo{
       position:relative;
         float: right;
-        transform: translate(-20%, -3%);
+        transform: translate(30%, -3%);
         display: block;
       }
     }
