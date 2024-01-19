@@ -1,10 +1,12 @@
 {
 	"folders": [
 		{
-			"path": "."
+			"name": "images",
+			"path": "../../Users/zarbe/OneDrive/Pulpit/images"
 		},
 		{
-			"path": "../../Users/zarbe/OneDrive/Pulpit/images"
+			"name": "resume",
+			"path": "."
 		}
 	],
 	"settings": {}
