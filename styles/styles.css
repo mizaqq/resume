@@ -22,17 +22,17 @@ ul { margin: 0 0 32px 17px; }
 dt { font-style: italic; font-weight: bold; font-size: 22px; text-align: center; padding: 0 16px 0 0; width:20%; float: left; height:auto ; border-right: 1px solid #999;  }
 dd { height: 25%;width: 70%; float: right; }
 dd.clear { float: none; margin: 0; height: 10px; }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 400px) {
      #objective{
 width: 80%; float: center; 
       }
     }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 400px) {
      dd{
  float: center; 
       }
     }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 400px) {
      dt{
  float: center; 
       }
