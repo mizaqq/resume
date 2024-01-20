@@ -16,22 +16,22 @@ p { margin: 0 0 16px 0; }
 a { color: #999; text-decoration: none; border-bottom: 1px dotted #999; }
 a:hover { border-bottom-style: solid; color: black; }
 ul { margin: 0 0 32px 17px; }
-#objective { width: 60%; float: left; }
+#objective { width: 60%; float: center; }
 
 #objective p { font-family: Georgia, Serif; font-style: italic; color: #111; }
-dt { font-style: italic; font-weight: bold; font-size: 22px; text-align: center; padding: 0 16px 0 0; width:20%; float: left; height:auto ; border-right: 1px solid #999;  }
-dd { height: 25%;width: 70%; float: right; }
+dt { font-style: italic; font-weight: bold; font-size: 22px; text-align: center; padding: 0 16px 0 0; width:20%; float: center; height:auto ; border-right: 1px solid #999;  }
+dd { height: 25%;width: 70%; float: center; }
 dd.clear { float: none; margin: 0; height: 10px; }
-  @media screen and (max-width: 768px) {
+  @media screen and (min-width: 768px) {
      #objective{
-width: 80%; float: center; 
+width: 80%; float: left; 
       }
     }
-   @media screen and  (max-width: 768px) {
-    dd { height: 25%;width: 70%; float: center; }
+   @media screen and  (min-width: 768px) {
+    dd { height: 25%;width: 70%; float: right; }
     }
-    @media screen and (max-width: 768px) {
-    dt { font-style: italic; font-weight: bold; font-size: 22px; text-align: center; padding: 0 16px 0 0; width:20%; float: center; height:auto ; border-right: 1px solid #999;  }
+    @media screen and (min-width: 768px) {
+    dt { font-style: italic; font-weight: bold; font-size: 22px; text-align: center; padding: 0 16px 0 0; width:20%; float: left; height:auto ; border-right: 1px solid #999;  }
 
     }
 #dynamicDt1 {
@@ -51,14 +51,14 @@ a{
 .photo{
   position:relative;
     float: right;
-    transform: translate(-70%, -3%);
+    transform: translate(80%, -3%);
     display: block;
   }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (min-width: 768px) {
      .photo{
       position:relative;
         float: right;
-        transform: translate(80%, -3%);
+        transform: translate(-70%, -3%);
         display: block;
       }
     }
