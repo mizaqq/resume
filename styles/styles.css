@@ -51,6 +51,9 @@ width: 60%; float: left;
     height: 12em;
 }
 }
+#cv{
+  font-size: 14px;
+}
 a{
     color: #111
   }
